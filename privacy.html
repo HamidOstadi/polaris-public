@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polaris — Privacy Policy</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #e0e0e0;
+            background: #0f1119;
+            line-height: 1.7;
+            padding: 2rem 1.5rem;
+        }
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        a { color: #7ba4d4; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: #8890a0;
+        }
+        h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.3rem;
+        }
+        .updated {
+            font-size: 0.85rem;
+            color: #8890a0;
+            margin-bottom: 2.5rem;
+        }
+        h2 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            color: #ffffff;
+            margin-top: 2rem;
+            margin-bottom: 0.8rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            color: #c0c8d8;
+        }
+        ul {
+            margin: 0 0 1rem 1.5rem;
+            color: #c0c8d8;
+        }
+        li { margin-bottom: 0.4rem; }
+        .footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #252838;
+            font-size: 0.85rem;
+            color: #8890a0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">← Back to Polaris</a>
+
+        <h1>Privacy Policy</h1>
+        <p class="updated">Last updated: April 2026</p>
+
+        <h2>Overview</h2>
+        <p>Polaris is a browser extension that analyses publicly visible profile and tweet data on X (formerly Twitter). It is designed as a privacy-first, local-only tool. No data ever leaves your browser.</p>
+
+        <h2>What Data Polaris Collects</h2>
+        <p>When you visit an X profile and use Polaris, the extension reads publicly visible information from the page, including:</p>
+        <ul>
+            <li>Profile display name, handle, join date, and avatar image</li>
+            <li>Follower count, following count, and post count</li>
+            <li>Tweet text, engagement metrics (likes, retweets, replies, views), timestamps, and embedded entities (hashtags, mentions, URLs)</li>
+        </ul>
+        <p>This is the same information visible to anyone viewing the profile on X. Polaris does not access any private data, direct messages, or information that requires authentication.</p>
+
+        <h2>How Data Is Stored</h2>
+        <p>All data is stored locally on your device using your browser's built-in IndexedDB storage. Extension preferences (such as the tweet scan cap and auto-track setting) are stored in chrome.storage.local.</p>
+        <p>No data is transmitted to any server, cloud service, or third party. Polaris makes zero network requests. There is no analytics, telemetry, or tracking of any kind.</p>
+
+        <h2>Data You Can Export</h2>
+        <p>Polaris allows you to export your locally stored data as JSONL (JSON Lines) files. These exports are generated entirely within your browser and saved to your local file system. No data is uploaded during export.</p>
+
+        <h2>Data Deletion</h2>
+        <p>You can delete all stored data at any time using the "Clear All Data" button in the Polaris settings panel. You can also delete data for individual profiles from the analytics dashboard. Uninstalling the extension removes all stored data.</p>
+
+        <h2>Third-Party Services</h2>
+        <p>Polaris does not use any third-party services, APIs, SDKs, or analytics platforms. It does not communicate with X's API or any other external service.</p>
+
+        <h2>Permissions</h2>
+        <p>Polaris requests the minimum permissions required to function:</p>
+        <ul>
+            <li><strong>tabs</strong> — to read the active tab's URL and determine if you're on a profile page</li>
+            <li><strong>storage</strong> — to save your extension preferences</li>
+            <li><strong>Host permission (x.com)</strong> — to read publicly visible page content on X</li>
+        </ul>
+
+        <h2>Changes to This Policy</h2>
+        <p>If this privacy policy is updated, the changes will be published alongside the extension update. The "last updated" date at the top of this document will reflect the most recent revision.</p>
+
+        <h2>Contact</h2>
+        <p>If you have questions about this privacy policy or the extension's data practices, please open an issue on the <a href="https://github.com/HamidOstadi/polaris-public/issues">GitHub repository</a>.</p>
+
+        <div class="footer">
+            Polaris — X Profile Analyzer · Built in London
+        </div>
+    </div>
+</body>
+</html>
