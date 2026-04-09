@@ -43,7 +43,7 @@ Polaris is a Chrome extension that gives you a complete analytical view of any X
 
 ## Install
 
-Available on the [Chrome Web Store](#) (coming soon).
+Available on the [Chrome Web Store](https://chromewebstore.google.com/detail/polaris-%E2%80%94-x-profile-analy/amdkhhpfgdfflmmcnapcnkbhfeajgbkf) (coming soon).
 
 For development:
 1. Download or clone the extension files
