@@ -299,11 +299,65 @@
         }
         .footer-links a:hover { color: var(--text-secondary); }
 
+        /* ── Showcase section ── */
+        .showcase {
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0 2rem 5rem;
+        }
+        .showcase-label {
+            text-align: center;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+        }
+        .showcase-heading {
+            text-align: center;
+            font-family: 'Instrument Serif', Georgia, serif;
+            font-size: clamp(1.8rem, 4vw, 2.4rem);
+            font-weight: 400;
+            color: var(--text-primary);
+            margin-bottom: 1rem;
+        }
+        .showcase-sub {
+            text-align: center;
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.6;
+            max-width: 540px;
+            margin: 0 auto 3rem;
+        }
+        .showcase-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+        }
+        .showcase-item {
+            border: 1px solid var(--border-subtle);
+            border-radius: 12px;
+            overflow: hidden;
+            background: var(--bg-card);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .showcase-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 32px rgba(107, 142, 201, 0.08);
+        }
+        .showcase-item img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
         /* ── Responsive ── */
         @media (max-width: 640px) {
             .hero { padding: 4rem 1.5rem 3rem; }
             .features { padding: 3rem 1.5rem 4rem; }
             .features-grid { grid-template-columns: 1fr; }
+            .showcase { padding: 0 1.5rem 4rem; }
+            .showcase-grid { grid-template-columns: 1fr; }
             .privacy-banner { padding: 2rem 1.5rem; }
             nav { padding: 1.2rem 1.5rem; }
             .nav-links { gap: 1.2rem; }
@@ -357,7 +411,7 @@
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
                     Add to Chrome
                 </a>
-                <p class="hero-note">Coming soon to the Chrome Web Store</p>
+                <p class="hero-note">Now on the Chrome Web Store</p>
             </div>
         </section>
 
@@ -377,9 +431,9 @@
                     <p>Analyse up to 200 tweets per profile. Content mix, engagement averages, top-performing posts, and posting frequency — all computed instantly.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon">🕐</div>
-                    <h3>Activity Patterns</h3>
-                    <p>See when an account is most active by day and hour. Detect posting regularity and identify scheduling patterns.</p>
+                    <div class="feature-icon">🔥</div>
+                    <h3>Activity Heatmap</h3>
+                    <p>A 7×24 grid showing when an account is most active across days and hours. Toggle retweets on or off, and export as a shareable image card.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">🔗</div>
@@ -395,6 +449,33 @@
                     <div class="feature-icon">🔒</div>
                     <h3>Fully Private</h3>
                     <p>Zero network requests. No API access. No tracking. Everything stays in your browser's local storage. Delete any time.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">☁️</div>
+                    <h3>Word Cloud</h3>
+                    <p>See the words a profile uses most across their tweets, sized by frequency. Includes a top-words leaderboard. Export as a shareable image card.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🖼️</div>
+                    <h3>Picture History</h3>
+                    <p>A visual timeline of how a profile's avatar has changed across snapshots. Spot rebrands, identity shifts, and account changes at a glance.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="showcase">
+            <p class="showcase-label">Sample output</p>
+            <h2 class="showcase-heading">Shareable cards from any profile</h2>
+            <p class="showcase-sub">
+                Every analysis can be exported as a polished image card —
+                generated locally in your browser, ready to share anywhere.
+            </p>
+            <div class="showcase-grid">
+                <div class="showcase-item">
+                    <img src="assets/samples/heatmap-card.png" alt="Polaris activity heatmap card showing NASA's posting patterns across days and hours">
+                </div>
+                <div class="showcase-item">
+                    <img src="assets/samples/wordcloud-card.png" alt="Polaris word cloud card showing the most frequent words in NASA's tweets">
                 </div>
             </div>
         </section>
@@ -417,7 +498,7 @@
         </section>
 
         <footer>
-            <div class="footer-left">Polaris · Built in London 🇬🇧</div>
+            <div class="footer-left">Polaris · Built in London 🇬🇧 · v1.4</div>
             <div class="footer-links">
                 <a href="privacy.html">Privacy Policy</a>
                 <a href="https://github.com/HamidOstadi/polaris-public">GitHub</a>
